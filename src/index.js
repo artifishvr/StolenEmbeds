@@ -17,8 +17,9 @@ router.get('/:videourl+?', ({ params }) => {
     	  <meta property="og:video:height" content="720">    	  
 		  <style>
         	  body {
-        	      background-color: #000000;
-    	          color: #ffffff;
+        	      background-color: #171717;
+    	          color: #fff;
+				  font-family: sans-serif;
     	      }
     	  </style>
   	</head>
@@ -28,11 +29,12 @@ router.get('/:videourl+?', ({ params }) => {
     	  <video controls width="300" height="300">
     	      <source src="${fallbackvideo}" type="video/mp4">
     	  </video>
-    	  <h1>embed method from stolen.shoes</h1>
+    	  <h2>embed method from stolen.shoes</h2>
+		  <h4>we do not host any of the content embedded or redirected through this site. please take issue with the content hoster.</h4>
   	</body>
   	</html>
   	`
 	return html(page)
 })
 
-export default router
+export default { ...router }
