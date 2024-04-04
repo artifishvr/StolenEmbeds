@@ -1,4 +1,4 @@
-name = "dry-breeze-ef4d"
+name = "discordembed"
 main = "src/index.js"
 compatibility_date = "2024-04-03"
 compatibility_flags = ["nodejs_compat"]
