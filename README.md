@@ -10,7 +10,7 @@ Inspired by [stolen.shoes](https://stolen.shoes/) and [FixTweet](https://github.
 
 ## Usage
 Put `https://emb.arti.lol/` in front of the video URL, like so:
-`https://emb.arti.lol/https://files.arti.lol/American_Psycho_LQ-YKZb0fPxBDZM.mp4`
+`https://emb.arti.lol/https://download.blender.org/peach/bigbuckbunny_movies/BigBuckBunny_320x180.mp4`
 
 ![screenshot from discord of two messages. shows one link to a video file, not embedding. shows the same link with emb.arti.lol in front of it, which embeds](screenshot.png)
 
