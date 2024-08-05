@@ -10,7 +10,6 @@ router.get('/:videourl+?', ({ params }) => {
   	<html>
   	<head>
     	  <title>stolen embeds</title>
-    	  <meta name="robots" content="noindex">
     	  <meta property="og:image" content="${fallbackimage}">
     	  <meta property="og:type" content="video.other">
     	  <meta property="og:video:url" content="${params.videourl || fallbackvideo}">
@@ -22,14 +21,21 @@ router.get('/:videourl+?', ({ params }) => {
     	          color: #fff;
 				  font-family: sans-serif;
     	      }
+				  a {
+					  color: #7dd3fc;
+				  }
     	  </style>
   	</head>
   	<body>
-   	   <a href="${params.videourl || fallbackvideo}">link to embedded video</a>
+	${params.videourl ? `<a href="${params.videourl}">link to embedded video</a>
+		<video controls width="1280" height="720">
+    	    <source src="${params.videourl}" type="video/mp4">
+    	</video>` : `<h3>use this by putting https://e.nya.llc/ in front of the video URL, like so: https://e.nya.llc/${fallbackvideo}</h3>
+		<video controls width="1280" height="720">
+    	    <source src="${fallbackvideo}" type="video/mp4">
+    	</video>`}
     	  <br>
-    	  <video controls width="300" height="300">
-    	      <source src="${fallbackvideo}" type="video/mp4">
-    	  </video>
+
     	  <h2>embed method from stolen.shoes</h2>
 		  <h4>we do not host any of the content embedded or redirected through this site. please take issue with the content hoster.</h4>
   	</body>
