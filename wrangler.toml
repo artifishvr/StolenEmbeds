@@ -1,5 +1,5 @@
 account_id = "11466916b094dbdf53640afa656a7b45"
-compatibility_date = "2024-04-03"
+compatibility_date = "2024-03-29"
 compatibility_flags = ["nodejs_compat"]
 main = "src/index.js"
 name = "discordembed"
