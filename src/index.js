@@ -1,7 +1,8 @@
 import { IttyRouter, html } from 'itty-router'
 const router = IttyRouter()
-const fallbackvideo = "https://files.arti.lol/blueberry-NhVxub8W3eof.mp4"
-const fallbackimage = "https://files.arti.lol/blank-FqJFgYnI3HSl.png"
+
+const fallbackvideo = "https://rizz.zip/blueberry-NhVxub8W3eof.mp4"
+const fallbackimage = "https://upload.wikimedia.org/wikipedia/commons/4/49/A_black_image.jpg"
 
 router.get('/:videourl+?', ({ params }) => {
 	const page = `
@@ -14,7 +15,7 @@ router.get('/:videourl+?', ({ params }) => {
     	  <meta property="og:type" content="video.other">
     	  <meta property="og:video:url" content="${params.videourl || fallbackvideo}">
     	  <meta property="og:video:width" content="1280">
-    	  <meta property="og:video:height" content="720">    	  
+    	  <meta property="og:video:height" content="720">
 		  <style>
         	  body {
         	      background-color: #171717;
