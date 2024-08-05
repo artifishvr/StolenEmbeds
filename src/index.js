@@ -4,7 +4,18 @@ const router = IttyRouter();
 const fallbackvideo = 'https://rizz.zip/blueberry-NhVxub8W3eof.mp4';
 const fallbackimage = 'https://upload.wikimedia.org/wikipedia/commons/4/49/A_black_image.jpg';
 
-router.get('/:videourl+?', ({ params }) => {
+router.get('/:videourl+?', ({ params, query }) => {
+	if (query) {
+		let first = true;
+		for (const [key, value] of Object.entries(query)) {
+			if (first) {
+				first = false;
+				params.videourl += `?${key}=${value}`;
+				continue;
+			}
+			params.videourl += `&${key}=${value}`;
+		}
+	}
 	return html(`
   	<!DOCTYPE html>
   	<html>
