@@ -4,7 +4,7 @@
     <img src="https://skillicons.dev/icons?i=workers,discord,pnpm" />
   </a>
 </p>
-Built with itty-router and cloudflare workers, this allows embedding unusual videos in Discord, such as 100+ megabyte videos or AV1-encoded videos.
+Built with itty-router and cloudflare workers, this allows embedding unusual videos in Discord, such as >500 megabyte videos or AV1-encoded videos.
 
 Inspired by [stolen.shoes](https://stolen.shoes/) and [FixTweet](https://github.com/FixTweet/FxTwitter).
 
