@@ -1,4 +1,4 @@
-account_id = "11466916b094dbdf53640afa656a7b45"
+account_id = "d11b99f5522517021e92d3650b158dbb"
 compatibility_date = "2024-03-29"
 compatibility_flags = ["nodejs_compat"]
 main = "src/index.js"
